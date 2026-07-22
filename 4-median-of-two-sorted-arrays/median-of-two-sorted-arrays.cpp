@@ -8,7 +8,6 @@ public:
           if(nums1[i]<nums2[j]){
            mergeArray.push_back(nums1[i]);
            i++;
-           
           }
           else{
             mergeArray.push_back(nums2[j]);
@@ -30,7 +29,6 @@ public:
         else{
           result=mergeArray[mid];
         }
-        
         return result;
     }
 };
