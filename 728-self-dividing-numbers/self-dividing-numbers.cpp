@@ -3,7 +3,7 @@ public:
     vector<int> selfDividingNumbers(int left, int right) {
         vector<int > result;
         while(left<=right){
-            if(left%10!=0 && flag(left)==1){
+            if(flag(left)){
              result.push_back(left);
             }
             left++;
