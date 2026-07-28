@@ -1,0 +1,20 @@
+class Solution {
+public:
+    string smallestPalindrome(string s) {
+        int len=s.length();
+        int mid=(len-1)/2;
+        // cout<<mid<<endl;
+        // if(len==1){
+        //     return s;
+        // }
+        if(len%2==0){
+          sort(s.begin(),s.begin()+mid+1);
+          sort(s.begin()+mid+1,s.end(),greater<char>());
+        }
+        else{
+            sort(s.begin(),s.begin()+mid);
+            sort(s.begin()+mid+1,s.end(),greater<char>());
+        }
+        return s;
+    }
+};
