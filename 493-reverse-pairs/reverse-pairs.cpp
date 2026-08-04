@@ -17,10 +17,8 @@ public:
         int i=l;
         int j=mid+1;
         int cnt=0;
-        long long x;
         while(i<=mid && j<=h){
-            x=nums[j]*2LL;
-            if(x<nums[i]){
+            if(nums[j]*2LL<nums[i]){
                 cnt+=mid-i+1;
                 j++;
             }
